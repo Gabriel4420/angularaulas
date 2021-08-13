@@ -8,8 +8,18 @@ como javascript -->
 <p>Total de nomes : {{names.length}}</p>
 <p>Nome Inicial : {{principalName}}</p>
 
+<div *ngIf="names.length <= 6">
+  <input type="text" >
+  <button>adicionar</button>
+</div>
+
 <ul>
     <li *ngFor="let item of objectNames">
         {{item.name}} - {{item.age}} - {{item.getType()}}
     </li>
 </ul>
+
+<p *ngIf="names.length > 6"> Tem muitos nomes cadastrados </p>
+
+
+<div *ngIf="showAviso">{{avisoMSG}}</div>

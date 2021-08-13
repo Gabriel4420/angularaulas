@@ -21,4 +21,8 @@ export class AppComponent {
     /* { name: 'Gabriel Rodrigues', age: 23 },
     { name: 'Paulo Rodrigues', age: 38 }, */
   ];
+
+  showAviso = true;
+
+  avisoMSG = 'Este é um aviso';
 }
